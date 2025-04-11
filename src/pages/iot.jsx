@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { React, useState } from 'react';
 import { Video, Play, AlertCircle, MapPin, Bell, Settings, Clock, Check, XCircle, ChevronDown, List, Home } from 'lucide-react';
 import Navbar from '../components/navbar'
 

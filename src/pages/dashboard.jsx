@@ -91,7 +91,7 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="flex h-500px w-100px bg-gray-50">
+    <div className="flex h-screen w-100px bg-gray-50">
       {/* Sidebar */}
       <Navbar/>
       

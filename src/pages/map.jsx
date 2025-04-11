@@ -173,7 +173,7 @@ const CampusSafetyMap = () => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
         {/* Header - Desktop */}
-        <div className="hidden md:block p-6 pb-4">
+        <div className="hidden md:block p-6">
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-2xl font-bold">Hello Ashley!</h1>
@@ -188,15 +188,15 @@ const CampusSafetyMap = () => {
         </div>
 
         {/* Map Title */}
-        <div className="px-4 md:px-6 py-2 md:pb-4">
+        <div className="py-2 md:pb-4 pl-2">
           <h2 className="text-lg md:text-xl font-bold text-teal-500">Campus Safety Map</h2>
           <p className="text-gray-500 text-xs md:text-sm">View safety zones and faculty in charge</p>
         </div>
 
-        {/* Map Display */}
-        <div className="px-4 md:px-6 flex-1 flex flex-col md:flex-row gap-4 md:gap-6 overflow-y-auto">
+        {/* Map Display - NO PADDING */}
+        <div className="flex-1 flex flex-col md:flex-row gap-0 overflow-y-auto">
           {/* Interactive Map */}
-          <div className="flex-1 min-h-60 md:min-h-0 bg-white rounded-xl shadow-sm border border-gray-200 p-2 md:p-4 relative overflow-hidden">
+          <div className="flex-1 min-h-60 md:min-h-0 bg-white shadow-sm border border-gray-200 relative overflow-hidden">
             <div className="absolute inset-0 bg-gray-50">
               {/* SVG Map */}
               <svg viewBox="0 0 800 600" className="w-full h-full">
@@ -323,7 +323,7 @@ const CampusSafetyMap = () => {
           </div>
           
           {/* Zone Information for Desktop and Mobile List view */}
-          <div className="md:w-80 bg-white rounded-xl shadow-sm border border-gray-200 p-4 overflow-y-auto">
+          <div className="md:w-80 bg-white shadow-sm border border-gray-200 p-4 overflow-y-auto">
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-bold">Safety Zones</h3>
               <div className="md:hidden">
